@@ -1,12 +1,26 @@
-![Metaflow_Logo_Horizontal_FullColor_Ribbon_Dark_RGB](https://user-images.githubusercontent.com/763451/89453116-96a57e00-d713-11ea-9fa6-82b29d4d6eff.png)
+# Metaflow Talent Analytics
 
-# Metaflow
+**Predict candidate success using Metaflow: from data ingestion to model deployment.**
 
-[Metaflow](https://metaflow.org) is a human-centric framework designed to help scientists and engineers **build and manage real-life AI and ML systems**. Serving teams of all sizes and scale, Metaflow streamlines the entire development lifecycle—from rapid prototyping in notebooks to reliable, maintainable production deployments—enabling teams to iterate quickly and deliver robust systems efficiently.
+This project demonstrates how to use Netflix’s [Metaflow](https://github.com/Netflix/metaflow) to build a reproducible, end-to-end machine learning pipeline that predicts the likelihood of a candidate accepting an offer and succeeding post-hire a common challenge in talent acquisition analytics.
 
-Originally developed at [Netflix](https://netflixtechblog.com/open-sourcing-metaflow-a-human-centric-framework-for-data-science-fa72e04a5d9) and now supported by [Outerbounds](https://outerbounds.com), Metaflow is designed to boost the productivity for research and engineering teams working on [a wide variety of projects](https://netflixtechblog.com/supporting-diverse-ml-systems-at-netflix-2d2e6b6d205d), from classical statistics to state-of-the-art deep learning and foundation models. By unifying code, data, and compute at every stage, Metaflow ensures seamless, end-to-end management of real-world AI and ML systems.
+> Built with: Python, Metaflow, Pandas, Scikit-learn, SHAP, SQL
 
-Today, Metaflow powers thousands of AI and ML experiences across a diverse array of companies, large and small, including Amazon, Doordash, Dyson, Goldman Sachs, Ramp, and [many others](ADOPTERS.md). At Netflix alone, Metaflow supports over 3000 AI and ML projects, executes hundreds of millions of data-intensive high-performance compute jobs processing petabytes of data and manages tens of petabytes of models and artifacts for hundreds of users across its AI, ML, data science, and engineering teams.
+
+## Project Overview
+
+🎯 **Goal:** Forecast candidate success and improve hiring funnel insights using ML.  
+🔁 **Pipeline:** Ingest → Clean → Train → Evaluate → Deploy  
+⚙️ **MLOps:** Powered by Metaflow for orchestration, experiment tracking, and reproducibility.
+
+
+## Key Features
+
+- ✅ End-to-end ML pipeline with Metaflow
+- 📊 SHAP-based model explainability
+- 🔍 Talent-funnel optimization logic
+- 📦 Modular structure for reuse
+- 🌐 REST API stub for candidate scoring (Flask-ready)
 
 ## From prototype to production (and back)
 
@@ -17,7 +31,6 @@ Metaflow provides a simple and friendly pythonic [API](https://docs.metaflow.org
 2. [Effortlessly scale horizontally and vertically in your cloud](https://docs.metaflow.org/scaling/remote-tasks/introduction), utilizing both CPUs and GPUs, with [fast data access](https://docs.metaflow.org/scaling/data) for running [massive embarrassingly parallel](https://docs.metaflow.org/metaflow/basics#foreach) as well as [gang-scheduled](https://docs.metaflow.org/scaling/remote-tasks/distributed-computing) compute workloads [reliably](https://docs.metaflow.org/scaling/failures) and [efficiently](https://docs.metaflow.org/scaling/checkpoint/introduction).
 3. [Easily manage dependencies](https://docs.metaflow.org/scaling/dependencies) and [deploy with one-click](https://docs.metaflow.org/production/introduction) to highly available production orchestrators with built in support for [reactive orchestration](https://docs.metaflow.org/production/event-triggering).
 
-For full documentation, check out our [API Reference](https://docs.metaflow.org/api) or see our [Release Notes](https://github.com/Netflix/metaflow/releases) for the latest features and improvements. 
 
 
 ## Getting started
@@ -55,9 +68,26 @@ and to [deploy to production-grade workflow orchestrators](https://docs.metaflow
 configure Metaflow and the infrastructure behind it appropriately.
 
 
-## Get in touch
-We'd love to hear from you. Join our community [Slack workspace](http://slack.outerbounds.co/)!
+## 📈 Model Use Case
+This pipeline can help Talent Acquisition teams:
 
-## Contributing
-We welcome contributions to Metaflow. Please see our [contribution guide](https://docs.metaflow.org/introduction/contributing-to-metaflow) for more details.
+- ✅ Predict candidate offer-to-join probability  
+- 📊 Forecast hiring outcomes across sourcing channels  
+- 🚨 Flag retention risks using pre-hire signals  
+- 🧠 Detect bias or bottlenecks in hiring stages  
 
+
+## 📘 Dataset
+This project uses a **synthetic HR dataset** adapted from public sources such as:
+
+- [Kaggle HR Analytics Dataset](https://www.kaggle.com/datasets/pavansubhasht/ibm-hr-analytics-attrition-dataset)
+- Mock Greenhouse/Lever ATS export formats
+
+> ⚠️ *No real candidate data is used in this demonstration.*
+
+
+## Credits
+
+- 🧬 Built on [Netflix Metaflow](https://github.com/Netflix/metaflow)  
+- 📁 Candidate data logic inspired by open HR analytics projects  
+- 👨‍💻 Developed by [Junaid Mohammed](https://www.linkedin.com/in/junaid-mohammed-analytics/)
